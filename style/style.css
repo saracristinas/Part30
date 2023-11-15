@@ -1,0 +1,106 @@
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box {
+    padding: 1rem;
+    text-align: center;
+    border: var(--border);
+   /* display: inline-block;*/
+}
+
+.menu .box-container .box img {
+    height: 10rem;
+}
+
+.menu .box-container .box h3 {
+    color: black;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+/*Classe errada*/
+.menu .box-container .box .price { /*Modificacao do texto de saiba mais a respeito do personagem*/
+    color: #21b06b;
+    font-size: 2.5rem;
+    padding: 5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+
+}
+
+.menu .box-container .box:hover{/*Botao de hover, quando o mouse passa*/
+    background: yellow;
+}
+
+.menu .box-container .box:hover > *{/*Quando o hover passa, a cor de fundo fica da cor escolhida*/
+    color: var(--black);
+}
+
+.menu .box-container .box .btn {
+    background-color: black;
+}
+
+.menu h1 {
+    font-size: 400%;
+}
+
+
+/*MEU CODIGO COMEÇA NO REVIEW .BOX-CONTAINER*/
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
+}
+
+.review .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.review .box-container .box p {
+    /*Paragrafo de texto*/
+    font-size: 0.5rem;
+    line-height: 1.9;
+    color: #7b2c2c;
+    padding: 2rem 0;
+}
+
+.review .box-container .box .user {
+    /*Foto de usuario*/
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box-container .box .quote {
+    /*Imagem das aspas*/
+    height: 2rem;
+    width: 20%;
+    padding: 0;
+}
+
+.review .box-container .box h3 {
+    /*Nome da pessoa abaixo da foto*/
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: #603737;
+    padding: 0;
+}
+
+.review .box-container .box .stars i {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+/*body
+{
+    min-height: 100vh;
+    background: linear-gradient(rgb(139, 28, 28), rgb(0, 0, 0));
+}
